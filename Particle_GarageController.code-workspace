@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "extensions.ignoreRecommendations": true,
+        "C_Cpp.default.configurationProvider": "particle.particle-vscode-core",
+        "files.associations": {
+            "*.ino": "cpp"
+        },
+        "particle.targetPlatform": "photon",
+        "particle.targetDevice": "GarageController",
+        "cortex-debug.openocdPath": "${command:particle.getDebuggerOpenocdPath}"
+    },
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
+}
