@@ -3,7 +3,7 @@
 /*******************************************************************************
  * Project  : GarageController
  * Hardware : Particle Photon
- * Date     : 20.12.2018
+ * Date     : 31.08.2019
  * Author   : Tim Hornikel
  * License  : GNU General Public License v3+
 *******************************************************************************/
@@ -26,7 +26,7 @@ void blinkLED(int pin, int off, int on);
 void checkCloudStatus();
 #line 10 "/Users/Tim/github/Particle_GarageController/src/Particle_GarageController.ino"
 String sensorStatus = "Initialization";
-String firmwareVersion = "v0.3.0"; // Version MAJOR.MINOR.PATCH
+String firmwareVersion = "v0.3.1"; // Version MAJOR.MINOR.PATCH
 String vehicleInGarageCloud = "Initialization";
 String garageDoorStateCloud = "Initialization";
 
@@ -159,7 +159,7 @@ void loop()
   readGarageDoorState();
 
   // reads vehicle state
-  readVehicleState();
+  // readVehicleState();  // feature currently not used
 
   // updates the time from the internet if necessary
   updateTime();
